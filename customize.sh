@@ -15,13 +15,6 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' openwrt/package/lean/default-se
 #rm openwrt/package/lean/luci-theme-argon -rf
 
 # Add a feed source
-echo 'src-git-full packages https://github.com/immortalwrt/packages.git;openwrt-21.02' >>feeds.conf.default
-echo 'src-git-full luci https://github.com/immortalwrt/luci.git;openwrt-21.02' >>feeds.conf.default
-echo 'src-git-full routing https://github.com/openwrt/routing.git;openwrt-21.02' >>feeds.conf.default
-echo 'src-git-full telephony https://github.com/openwrt/telephony.git;openwrt-21.02' >>feeds.conf.default
 echo 'src-git danshui https://github.com/281677160/openwrt-package.git;immortalwrt' >>feeds.conf.default
 echo 'src-git danshui2 https://github.com/281677160/openwrt-package.git;theme2' >>feeds.conf.default
-echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
-echo 'src-git passwall1 https://github.com/xiaorouji/openwrt-passwall.git;luci' >>feeds.conf.default
-echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main' >>feeds.conf.default
-echo 'src-git passwall3 https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
