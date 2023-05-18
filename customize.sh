@@ -15,10 +15,10 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' openwrt/package/lean/default-se
 #rm openwrt/package/lean/luci-theme-argon -rf
 
 #4. Add a feed source
-# echo 'src-git danshui https://github.com/281677160/openwrt-package.git' >>feeds.conf.default
-# echo 'src-git danshui2 https://github.com/281677160/openwrt-package.git;theme2' >>feeds.conf.default
-# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git danshui https://github.com/281677160/openwrt-package.git;immortalwrt' >>feeds.conf.default
+echo 'src-git danshui2 https://github.com/281677160/openwrt-package.git;theme2' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 #5. git clone
 # git clone https://github.com/281677160/openwrt-package
