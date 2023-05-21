@@ -19,8 +19,5 @@ echo "src-git danshui https://github.com/281677160/openwrt-package" >> ./feeds.c
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
-#5. git clone
-# git clone https://github.com/281677160/openwrt-package
-
-# 281677160/openwrt-package
-# sed -i '$a src-git danshui https://github.com/281677160/openwrt-package.git;immortalwrt' feeds.conf.default
+#5. 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
+sed -i 's/MlhKWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
