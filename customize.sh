@@ -20,4 +20,4 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
 #5. name
-sed -i 's/MlhkWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
+# sed -i 's/MlhkWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
