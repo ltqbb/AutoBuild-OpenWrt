@@ -6,7 +6,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 #1. Modify default IP
-sed -i 's/192.168.100.1/192.168.5.1/g' openwrt/package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.100.1/g' openwrt/package/base-files/files/bin/config_generate
 
 #2. Clear the login password
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' openwrt/package/lean/default-settings/files/zzz-default-settings
@@ -19,5 +19,5 @@ echo "src-git danshui https://github.com/281677160/openwrt-package" >> ./feeds.c
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
-#5. 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
+#5. name
 sed -i 's/MlhkWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
